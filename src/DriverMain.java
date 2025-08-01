@@ -34,6 +34,23 @@ public class DriverMain {
             e.printStackTrace();
         }
 
+
+        //closing the threads
+        try {
+            t1.join();
+            t2.join();
+            t3.join();
+            t4.join();
+            d1.join();
+            d2.join();
+            d3.join();
+            d4.join();
+        } catch (Exception e) {
+            System.out.println("Thread execution interrupted !");
+            e.printStackTrace();
+        }
+
+        // Final Balance
         System.out.println("Final Balance = $" + obj.getBalance());
     }
 }

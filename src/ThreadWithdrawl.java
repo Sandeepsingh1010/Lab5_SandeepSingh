@@ -1,4 +1,3 @@
-
 public class ThreadWithdrawl extends Thread {
 
     Bank object;
