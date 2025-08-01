@@ -33,5 +33,7 @@ public class DriverMain {
             System.out.println("Thread execution interrupted !");
             e.printStackTrace();
         }
+
+        System.out.println("Final Balance = $" + obj.getBalance());
     }
 }
